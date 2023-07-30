@@ -1,0 +1,41 @@
+.button {
+  font-family: 'RubikMedium';
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-self: baseline;
+}
+
+.text-with-icon-container {
+  color: var(--modreate-blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.negative-label {
+  color: hsl(358, 79%, 66%)
+}
+
+.text-with-icon-container>span {
+  margin-left: 8px;
+}
+
+.contained {
+  padding: 12px 16px;
+  color: white;
+  background-color: var(--modreate-blue);
+  border-radius: 8px;
+}
+
+.contained:hover {
+  color: var(--light-gray);
+  background-color: var(--light-grayish-blue);
+}
+
+.disabled {
+  background-color: var(--light-grayish-blue);
+  padding: 12px 16px;
+  color: white;
+  border-radius: 8px;
+}

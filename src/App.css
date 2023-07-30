@@ -1,5 +1,65 @@
+:root {
+  --dark-blue: hsl(212, 24%, 26%);
+  --modreate-blue: hsl(238, 40%, 52%);
+  --light-gray: hsl(223, 19%, 93%);
+  --light-grayish-blue: hsl(239, 57%, 85%);
+  --very-light-gray: hsl(228, 33%, 97%);
+  --dark-blue: hsl(212, 24%, 26%);
+  --dark-gray: hsl(225, 2%, 45%);
+}
+
+@font-face {
+  font-family: 'RubikRegular';
+  src: url('../public/fonts/Rubik-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RubikMedium';
+  src: url('../public/fonts/Rubik-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'RubikBold';
+  src: url('../public/fonts//Rubik-Bold.ttf');
+}
+
+.card-title {
+  font-family: 'RubikMedium';
+  font-size: 14px;
+  color: var(--dark-blue);
+}
+
+.card-caption {
+  font-family: 'RubikRegular';
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.card-body {
+  font-family: 'RubikRegular';
+  font-size: 15px;
+  color: var(--dark-gray);
+}
+
+.header {
+  font-family: 'RubikMedium';
+  font-size: 28px;
+  color: var(--modreate-blue);
+  /* padding: 18px 0px; */
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+}
+
+@media (max-width: 480) {
+  .App {
+    padding: 12px;
+  }
 }
 
 .App-logo {
@@ -32,7 +92,20 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: var(--very-light-gray);
+}
+
+html,
+body,
+div,
+span {
+  padding: 0px;
+  margin: 0px;
 }

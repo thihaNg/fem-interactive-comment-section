@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.container > span {
+  color: var(--modreate-blue);
+  font-family: 'RubikMedium';
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+.container > img {
+  padding: 8px 10px 12px 10px;
+}

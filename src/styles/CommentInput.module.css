@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+textarea {
+  flex-grow: 1;
+  border-radius: 4px;
+  resize: none;
+  padding: 8px;
+  font-family: 'RubikRegular';
+  /* width: 100%; */
+  border: 1px solid var(--modreate-blue);
+  min-height: 64px;
+}
+
+.container > textarea {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.mobile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container>textarea {
+    margin: 0px;
+  }
+}

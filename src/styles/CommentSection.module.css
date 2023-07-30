@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > *:not(:first-child) {
+  margin-top: 12px;
+}
+
+.replies-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.replies-horizontal-divider {
+  width: 4px;
+  background-color: var(--light-gray);
+  margin-left: 16px;
+}
+
+.reply-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 16px;
+}
+
+.reply-list-wrapper > *:not(:first-child) {
+  margin-top: 16px;
+}
